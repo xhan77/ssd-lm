@@ -1,4 +1,4 @@
-# SSD-LM (Semi-autoregressive Simplex-based Diffusion Language Model for Text Generation and Modular Control)
+# SSD-LM
 
 Our preprint can be found [here](https://arxiv.org/abs/2210.17432).
 
