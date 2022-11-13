@@ -1,6 +1,6 @@
 # SSD-LM
 
-We present a demo of SSD-LM in Google Colab [here](https://colab.research.google.com/drive/1vNKqvzzJQp3k89QPuns5ibsq-VNC9wGN?usp=sharing)!
+We present a demo of SSD-LM (**S**emi-autoregressive **S**implex-based **D**iffusion Language Model) in Google Colab [here](https://colab.research.google.com/drive/1vNKqvzzJQp3k89QPuns5ibsq-VNC9wGN?usp=sharing)!
 
 For more details of SSD-LM, please check out our preprint [here](https://arxiv.org/abs/2210.17432).
 
@@ -8,7 +8,7 @@ Below introduces the steps to reproduce our experiments in the paper.
 
 ### Environment setup
 
-We use Conda and provide a yaml file for our environment, `environment.yml` (env name: `ssdlm`). You can follow the steps [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) to set it up.
+We use Conda and provide a yaml file for our environment, `environment.yml` (env name: `ssdlm`). You can follow the steps [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) to set it up. We also use a Slurm system to train and evaluate our model. 
 
 Note that for all shell and slurm scripts below (ending with `.sh` or `.sbatch`), you may want to change the home directory paths within them (e.g., search and replace all `/private/home/xhan77`). 
 
@@ -24,7 +24,7 @@ This will download and process OpenWebText.
 
 * `sbatch submit_template_ssd_model_train.sbatch`
 
-This starts a distributed training for SSD-LM and saves to `logging/ssd_dbs25`. If the job is interrupted, simply resubmit the job via the command above. Note that if the output directory is not empty and you want to start training from scratch again, you need to manually delete the non-empty output directory (`logging/ssd_dbs25`).
+This starts a distributed training for SSD-LM and saves to `logging/ssd_dbs25`. If the job is interrupted, simply resubmit the job via the command above (should automatically resume from the most recent recoverable checkpoint). Note that if the output directory is not empty and you want to start training from scratch again, you need to manually delete the non-empty output directory (`logging/ssd_dbs25`).
 
 Alternatively, you can download files from [here](https://huggingface.co/xhan77/ssdlm/tree/main) and manually copy to `logging/ssd_dbs25`.
 
