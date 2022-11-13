@@ -1,0 +1,18 @@
+{
+  "_data_files": [
+    {
+      "filename": "dataset.arrow"
+    }
+  ],
+  "_fingerprint": "750935e92ab5012d",
+  "_format_columns": [
+    "attention_mask",
+    "input_ids",
+    "special_tokens_mask"
+  ],
+  "_format_kwargs": {},
+  "_format_type": null,
+  "_indexes": {},
+  "_output_all_columns": false,
+  "_split": null
+}

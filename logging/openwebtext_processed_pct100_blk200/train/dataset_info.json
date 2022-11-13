@@ -1,0 +1,50 @@
+{
+  "builder_name": null,
+  "citation": "@misc{Gokaslan2019OpenWeb,\n  title={OpenWebText Corpus},\n  author={Aaron Gokaslan*, Vanya Cohen*, Ellie Pavlick, Stefanie Tellex},\n  howpublished{\\url{http://Skylion007.github.io/OpenWebTextCorpus}},\n  year={2019}\n}",
+  "config_name": null,
+  "dataset_size": null,
+  "description": "An open-source replication of the WebText dataset from OpenAI.",
+  "download_checksums": null,
+  "download_size": null,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "id": null,
+        "_type": "Value"
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    },
+    "special_tokens_mask": {
+      "feature": {
+        "dtype": "int8",
+        "id": null,
+        "_type": "Value"
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "id": null,
+        "_type": "Value"
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://skylion007.github.io/OpenWebTextCorpus/",
+  "license": "",
+  "post_processed": null,
+  "post_processing_size": null,
+  "size_in_bytes": null,
+  "splits": null,
+  "supervised_keys": null,
+  "task_templates": null,
+  "version": null
+}
