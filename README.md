@@ -10,7 +10,7 @@ Below introduces the steps to reproduce our experiments in the paper.
 
 We use Conda and provide a yaml file for our environment, `environment.yml` (env name: `ssdlm`). You can follow the steps [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) to set it up. We also use a Slurm system to train and evaluate our model. 
 
-Note that for all shell and slurm scripts below (ending with `.sh` or `.sbatch`), you may want to change the home directory paths within them (e.g., search and replace all `/private/home/xhan77`). 
+Note that for all shell and slurm scripts below and in the repository (ending with `.sh` or `.sbatch`), you may want to change the home directory paths within them (e.g., search and replace all `/private/home/xhan77`). 
 
 For the slurm files, you may want to remove the placeholder and pass in your own partition name, device constraint (remove the line if not applicable), and job time limit (we use 72hrs but the longer the better). We also assume each compute node has 8 GPUs, but you can adjust according to your system as well. 
 
